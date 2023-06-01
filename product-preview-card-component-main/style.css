@@ -1,0 +1,130 @@
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream:  hsl(30, 38%, 92%);
+    --Very-dark-blue:  hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --Very-dark-cyan: hsl(158, 35%, 24%);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+}
+
+.card {
+    width: 700px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 0.50rem;
+    height: 525px;
+}
+
+img {
+    width: 350px;
+    border-radius: 0.50rem 1px 0rem 0.50rem;
+}
+
+.right-area {
+    padding: 2rem;
+}
+#perfume {
+    font-family: Montserrat;
+    letter-spacing: 5px;
+    font-size: 12px;
+    margin-bottom: 1.5rem;
+}
+
+#title {
+    font-family: Fraunces;
+    font-size: 35px;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: var(--Very-dark-blue);
+}
+
+#txt {
+    font-family: Montserrat;
+    margin-bottom: 1.5rem;
+    
+}
+
+#cart-img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+button {
+    background-color: var(--Dark-cyan);
+    width: 280px;
+    font-family: Montserrat;
+    border-radius: 0.50rem;
+    padding: 0.80rem;
+    color: white;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: var(--Very-dark-cyan);
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.7;
+}
+
+#span-price {
+    font-size: 13px;
+    text-decoration: line-through;
+    position: relative;
+    bottom: 8px;
+    left: 10px;
+    font-family: Montserrat;
+   
+}
+
+#price {
+    color: var(--Dark-cyan);
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+#btn-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:600px) {
+
+    .left-area {
+        content: url(images/image-product-mobile.jpg);
+    }
+
+    .card {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        
+    }
+
+    img {
+        width: 150px;
+    }
+    
+}
